@@ -29,3 +29,98 @@ p{
     font-size: 20px;
     
 }
+.ncont{
+    flex: 1;
+    padding-left: 2rem ;
+}
+.imgdc{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex: 1;
+    padding-left: 5rem;
+    text-align: left;
+}
+.imgdc img{
+    max-width: 80%;
+    justify-content: center;
+}
+.contL{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.btn{
+    margin-top:60px;
+    left: 0px;
+    
+}
+.contp{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100hv;
+flex-direction: row-reverse;  
+padding-top: 30px;  
+
+}
+.ncono{
+flex: 1;
+position: relative;
+display: flex;
+flex-direction:column;
+align-items: flex-start;
+}
+.ncono h1{
+margin-top: 10px;
+}
+.ncono p{
+    text-align:center;
+    margin-right: 70px;
+}
+.imgds{
+flex: 1;
+text-align: left;
+padding-left: 7rem;
+
+}
+.imgds img{
+    max-width: 80%;
+    
+}
+.btno{
+    margin-top: 40px;
+    justify-content: start;
+}
+h2{
+    text-align: center;
+    margin-top: 70px;
+}
+.cajas{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    text-align: start;
+    padding: 30px 100px;
+    gap: 90px;
+}
+.cajas p{
+    text-align: justify;
+}
+.conte{
+    background-color: rgb(248, 245, 245);
+    height: 15rem;
+}
+.regis{
+    margin-top: 80px;
+    background-color:rgb(248, 245, 245) ;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    
+}
+.btn{
+    margin-top: 0%;
+}
