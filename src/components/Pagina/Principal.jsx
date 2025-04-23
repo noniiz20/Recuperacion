@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Doctor from '../Imagenes/doctor.webp'
 import Mia from '../Imagenes/Mia.avif'
 import { FaHospital } from "react-icons/fa6";
+import { CgAdd } from "react-icons/cg";
 function Principal() {
     return (
         <>  
@@ -83,7 +84,71 @@ function Principal() {
             <Button variant="primary" size="lg" active>Primary button</Button>
             </div>
           </div>
+
+        <div className="contenedorfo"></div>
+      <div className="footer">
+
+        <div className="log">
+        <div className="Contm">
+          <div className="poque">
+            <CgAdd />
+            <h3>MediLop</h3>
+            </div>
+            <p>ljfnjdwekjyhkn</p>
+            </div>
+<div className="nm">
+            <div className="Conto">
+            <FaUserDoctor />
+            
+            </div>
+            <div className="Conto">
+            <FaUserDoctor />
           
+            </div>
+            <div className="Conto">
+            <FaUserDoctor />
+            </div>
+
+            <div className="Conto">
+            <FaUserDoctor />
+            
+            </div>
+            <div>
+
+            </div>
+  </div>            
+      </div>
+      
+
+      <div className="section">
+      <ul className="lkfoo">
+        <h3>service</h3>
+        <li><a href="#">Privacy polucy</a></li>
+        <li><a href="#">Terms of service</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+      </div>
+      
+      <div className="section">
+      <ul className="lkfoo">
+        <h3>facture</h3>
+        <li><a href="#">Privacy polucy</a></li>
+        <li><a href="#">Terms of service</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+      </div>
+
+      <div className="section">
+      <ul className="lkfoo">
+        <h3>legal</h3>
+        <li><a href="#">Privacy polucy</a></li>
+        <li><a href="#">Terms of service</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+      </div>
+
+      </div>
+
         </div>
         </>
         
