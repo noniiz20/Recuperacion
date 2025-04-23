@@ -1,0 +1,25 @@
+
+.container{
+    display: flex;
+    margin-top: 80%;
+    flex-direction: column;
+    background-color: rgb(224, 221, 221);
+    padding: 30px 30px;
+    gap: 20px;
+    }
+    .mb-3{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .formulario{
+        background-color: royalblue;
+    }
+body{
+    margin-top: 0;
+}

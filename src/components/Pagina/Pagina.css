@@ -52,10 +52,11 @@ p{
     height: 100vh;
 }
 .btn{
-    margin-top:60px;
+    margin-top:80px;
     left: 0px;
     
 }
+
 .contp{
 display: flex;
 align-items: center;
@@ -125,8 +126,13 @@ h2{
     margin-top: 10px;
 }
 .contenedorfo{
-    padding: 20px 0;
-    gap: 20px
+    padding:0px ;
+    gap: 100px;
+    justify-content: start;
+    flex-direction: row;
+    display: flex;
+    margin-right: 130px;
+
 }
 .footer{
     display: flex;
@@ -201,11 +207,25 @@ h2{
 .conto{
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
+    position: relative;
+    justify-content: start;
 }
-.nm{
-    flex-direction: row;
+.icon-fo{
     display: flex;
-    line-height: 0;
-    text-align: start;
-
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+.sec.ico{
+    flex: 1;
+    margin-right: 40px;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 90px;
 }

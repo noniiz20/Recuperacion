@@ -5,6 +5,7 @@ import Doctor from '../Imagenes/doctor.webp'
 import Mia from '../Imagenes/Mia.avif'
 import { FaHospital } from "react-icons/fa6";
 import { CgAdd } from "react-icons/cg";
+import './Pagina.css'
 function Principal() {
     return (
         <>  
@@ -85,7 +86,7 @@ function Principal() {
             </div>
           </div>
 
-        <div className="contenedorfo"></div>
+        <div className="contenedorfo">
       <div className="footer">
 
         <div className="log">
@@ -96,28 +97,21 @@ function Principal() {
             </div>
             <p>ljfnjdwekjyhkn</p>
             </div>
-<div className="nm">
-            <div className="Conto">
-            <FaUserDoctor />
-            
-            </div>
-            <div className="Conto">
-            <FaUserDoctor />
-          
-            </div>
-            <div className="Conto">
-            <FaUserDoctor />
+            <div className="icon-fo">
+              <div className="sec-ico">
+                <div className="icon">
+                <CgAdd />
+                <CgAdd />
+                <CgAdd />
+                <CgAdd />
+                </div>
+              </div>
             </div>
 
-            <div className="Conto">
-            <FaUserDoctor />
             
-            </div>
-            <div>
-
-            </div>
-  </div>            
       </div>
+      </div>
+
       
 
       <div className="section">

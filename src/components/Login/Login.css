@@ -1,0 +1,8 @@
+.container{
+    background-color: rgb(235, 234, 234);
+}
+.formulario{
+    background-color: rgb(224, 221, 221);
+    padding: 30px 30px;
+    gap: 20px;
+}

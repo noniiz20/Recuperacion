@@ -1,11 +1,13 @@
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
+import Row from 'react-bootstrap/Row';    
+import './Registro.css';
 
 function RegistroU() {
   return (
-    <Form>
+    <Form className='formulario'>
+      <div className='container'>
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>Email</Form.Label>
@@ -35,6 +37,7 @@ function RegistroU() {
       <Button variant="primary" type="submit">
         Submit
       </Button>
+      </div>
     </Form>
   );
 }

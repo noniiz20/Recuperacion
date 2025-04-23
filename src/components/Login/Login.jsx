@@ -3,7 +3,8 @@ import Form from 'react-bootstrap/Form';
 
 function Login() {
   return (
-    <Form>
+    <div className="container2">
+    <Form className='formulario'>
       <Form.Group className="correo" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
@@ -23,6 +24,8 @@ function Login() {
         Submit
       </Button>
     </Form>
+    </div>
+   
   );
 }
 
