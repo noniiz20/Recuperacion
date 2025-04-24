@@ -1,0 +1,114 @@
+/* Estilos generales */
+.ayuda {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+  
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.hero-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+.faqs {
+  margin: 40px 0;
+}
+
+.faqs h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  background: #81878d;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  background: #e9ecef;
+}
+
+.faq-answer {
+  padding: 15px;
+  background: white;
+  display: none; 
+}
+
+.faq-item.active .faq-answer {
+  display: block; 
+}
+
+.contacto {
+  margin: 40px 0;
+}
+
+.contacto h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact-card {
+  text-align: center;
+  padding: 20px;
+  background: #6f7479;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.contact-icon {
+  font-size: 30px;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.security {
+  text-align: center;
+  padding: 20px;
+  background: #e8f4fd;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.security-icon {
+  font-size: 40px;
+  color: #2ecc71;
+  margin-bottom: 10px;
+} 

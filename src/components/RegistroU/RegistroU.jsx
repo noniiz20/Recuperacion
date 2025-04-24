@@ -1,44 +1,46 @@
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';    
-import './Registro.css';
+import React from 'react';
+import './Registro.css'
+import { Link } from 'react-router-dom';
 
-function RegistroU() {
+const RegistroU = () => {
   return (
-    <Form className='formulario'>
-      <div className='container'>
-      <Row className="mb-3">
-        <Form.Group as={Col} controlId="formGridEmail">
-          <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-        </Form.Group>
-
-        <Form.Group as={Col} controlId="formGridPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-      </Row>
-
-      <Form.Group className="mb-3" controlId="formGridAddress1">
-        <Form.Label>Address</Form.Label>
-        <Form.Control placeholder="1234 Main St" />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formGridAddress2">
-        <Form.Label>Address 2</Form.Label>
-        <Form.Control placeholder="Apartment, studio, or floor" />
-      </Form.Group>
-      
-      <Form.Group className="mb-3" id="formGridCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
+    <div>
+      <div className="registration-form-container">
+      <div className="registration-form">
+        <h2>Regístrate</h2>
+        <form>
+          <div className="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required/>
+          </div>
+          <div className="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required/>
+          </div>
+          <div className="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required/>
+          </div>
+          <div className="form-group">
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required/>
+          </div>
+          <div className="form-group">
+            <label for="address">Dirección:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+          </div>
+          <div className="form-group">
+            <label for="birthdate">Fecha de nacimiento:</label>
+            <input type="date" id="birthdate" name="birthdate" required/>
+          </div>
+          <Link to="/Login"><button type="submit" className="btn-register">Registrarse</button></Link>
+        </form>
+        <div className="form-footer">
+          <p>¿Ya tienes una cuenta? <a href="#" class="login-link">Iniciar sesión</a></p>
+        </div>
       </div>
-    </Form>
+    </div>
+  </div>
   );
 }
 

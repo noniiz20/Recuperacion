@@ -1,29 +1,26 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import './Login.css'
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
-    <div className="container2">
-    <Form className='formulario'>
-      <Form.Group className="correo" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="ingcorreo">
-          We'll never share your email with anyone else.
-        </Form.Text>
-      </Form.Group>
-
-      <Form.Group className="contraseña" controlId="formBasicPassword">
-        <Form.Label>Contraseña</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
-      <Form.Group className="iniciarsesion" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-      <Button variant="primary" type="Login">
-        Submit
-      </Button>
-    </Form>
+    <div className="login-form-container">
+      <div className="login-form">
+        <h2>Iniciar Sesión</h2>
+        <form>
+          <div className="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required/>
+          </div>
+          <div className="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required/>
+          </div>
+          <Link to="/"><button type="submit" className="btn-login">Iniciar Sesión</button></Link>
+        </form>
+        <div className="form-footer">
+          <p>¿No tienes una cuenta? <a href="/Registrarse" className="register-link">Regístrate</a></p>
+        </div>
+      </div>
     </div>
    
   );

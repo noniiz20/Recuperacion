@@ -1,152 +1,111 @@
-import { FaUserDoctor } from "react-icons/fa6";
-import './Pagina.css'
+import React from 'react';
+import { FaUserDoctor, FaHospital } from "react-icons/fa6";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import Button from 'react-bootstrap/Button';
-import Doctor from '../Imagenes/doctor.webp'
-import Mia from '../Imagenes/Mia.avif'
-import { FaHospital } from "react-icons/fa6";
-import { CgAdd } from "react-icons/cg";
-import './Pagina.css'
+import './Pagina.css';
+import Doctor from '../Imagenes/doctor.webp';
+import Mia from '../Imagenes/Mia.avif';
+import { Link } from 'react-router-dom';
+
 function Principal() {
-    return (
-        <>  
-            <h1>Easy Steps And Get Your Solution</h1>
-            <div className="pcont">
-            <div className="Cont">
-            <FaUserDoctor />
+  return (
+    <div className="main-container">
+      {/* Tarjetas */}
+      <h1 className="main-title">Easy Steps And Get Your Solution</h1>
+      <div className="cards-container">
+        {[1, 2, 3, 4].map((item) => (
+          <div className="card" key={item}>
+            <FaUserDoctor className="card-icon" />
             <h6>Welcome to Easy Steps</h6>
-            <p>lorem</p>
-            </div>
-
-            <div className="Cont">
-            <FaUserDoctor />
-            <h6>Welcome to Easy Steps</h6>
-            <p>lorem</p>
-            </div>
-
-            <div className="Cont">
-            <FaUserDoctor />
-            <h6>Welcome to Easy Steps</h6>
-            <p>lorem</p>
-            </div>
-
-            <div className="Cont">
-            <FaUserDoctor />
-            <h6>Welcome to Easy Steps</h6>
-            <p>lorem</p>
-            </div>
-      </div>
-      <div className="contL">
-      <div className="ncont">
-      <h2>Best Doctor Anywhere And Anytime</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem tempora dignissimos ipsum obcaecati nostrum quod itaque iusto possimus. Unde perferendis itaque quos quis at odit, vitae adipisci laboriosam odio eius.</p>
-        <div className="btn">
-      <Button variant="primary">Ayuda</Button>
-        </div>
-      </div>
-      <div className="imgdc">
-        <img src={Doctor} alt="" />
-        </div>
-        </div>
-
-        <div className="contp">
-      <div className="ncono">
-      <h2>Urgent Online Care Solution Your Problem</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem tempora dignissimos ipsum obcaecati nostrum quod itaque iusto possimus. Unde perferendis itaque quos quis at odit, vitae adipisci laboriosam odio eius.</p>
-        <div className="btno">
-      <Button variant="primary">Quienes somos</Button>
-        </div>
-      </div>
-      <div className="imgds">
-        <img src={Mia} alt="" />
-        </div>
-        </div>
-        <div className="contenedor">
-          <div className="sub">
-            <h2>What People Say About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
           </div>
-          <div className="cajas">
-          <div className="conte">
-            <FaHospital />
+        ))}
+      </div>
+
+      {/*Doctor + Botón */}
+      <div className="image-section">
+        <div className="text-content">
+          <h2>Best Doctor Anywhere And Anytime</h2>
+          <p className="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tempora dignissimos ipsum obcaecati nostrum.
+          </p>
+          <Link to="/Ayuda"><Button variant="primary" className="action-button">Ayuda</Button></Link>
+        </div>
+        <img src={Doctor} alt="Doctor" className="uniform-image" />
+      </div>
+
+      {/*Mia + Botón */}
+      <div className="image-section"> 
+        <img src={Mia} alt="Mia" className="uniform-image" />
+        <div className="text-content">
+          <h2>Urgent Online Care Solution Your Problem</h2>
+          <p className="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+          </p>
+          <Link to="/QuienesSomos"><Button variant="primary" className="action-button">Quienes somos</Button></Link>
+        </div>
+      </div>
+
+      {/* Testimonios */}
+      <div className="testimonials">
+        <h2>What People Say About Us</h2>
+        <div className="testimonial-cards">
+          <div className="testimonial-card">
+            <FaHospital className="testimonial-icon" />
             <h3>Welcome to Easy Steps</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi amet dicta voluptatibus fuga reiciendis officiis </p>
-            </div>
-
-            <div className="conte">
-            <FaHospital />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi amet dicta voluptatibus.</p>
+          </div>
+          <div className="testimonial-card">
+            <FaHospital className="testimonial-icon" />
             <h3>Welcome to Easy Steps</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero accusamus ex fugit numquam eos, corrupti nobis </p>
-            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi amet dicta voluptatibus.</p>
           </div>
-          <div className="regis">
-            <div className="txt">
-            <h3>Want to register Easily?</h3>
-            </div>
-            <div className="bot">
-            <Button variant="primary" size="lg" active>Primary button</Button>
-            </div>
-          </div>
-
-        <div className="contenedorfo">
-      <div className="footer">
-
-        <div className="log">
-        <div className="Contm">
-          <div className="poque">
-            <CgAdd />
-            <h3>MediLop</h3>
-            </div>
-            <p>ljfnjdwekjyhkn</p>
-            </div>
-            <div className="icon-fo">
-              <div className="sec-ico">
-                <div className="icon">
-                <CgAdd />
-                <CgAdd />
-                <CgAdd />
-                <CgAdd />
-                </div>
-              </div>
-            </div>
-
-            
-      </div>
-      </div>
-
-      
-
-      <div className="section">
-      <ul className="lkfoo">
-        <h3>service</h3>
-        <li><a href="#">Privacy polucy</a></li>
-        <li><a href="#">Terms of service</a></li>
-        <li><a href="#">contact us</a></li>
-      </ul>
-      </div>
-      
-      <div className="section">
-      <ul className="lkfoo">
-        <h3>facture</h3>
-        <li><a href="#">Privacy polucy</a></li>
-        <li><a href="#">Terms of service</a></li>
-        <li><a href="#">contact us</a></li>
-      </ul>
-      </div>
-
-      <div className="section">
-      <ul className="lkfoo">
-        <h3>legal</h3>
-        <li><a href="#">Privacy polucy</a></li>
-        <li><a href="#">Terms of service</a></li>
-        <li><a href="#">contact us</a></li>
-      </ul>
-      </div>
-
-      </div>
-
         </div>
-        </>
-        
-    )
+      </div>
+
+      {/* Registro */}
+      <div className="register-section">
+        <div className="register-content">
+          <h3>Want to register Easily?</h3>
+          <Button variant="primary" size="lg" active className="register-button">Primary button</Button>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-brand">
+            <h2>MediLog</h2>
+            <p className="footer-description">Soluciones médicas confiables para todos.</p>
+            <div className="social-icons">
+              <FaFacebookF /> <FaTwitter /> <FaInstagram /> <FaLinkedinIn />
+            </div>
+          </div>
+
+          <div className="footer-columns">
+            <ul className="footer-links">
+              <li><h3>Servicios</h3></li>
+              <li><a href="/Login">Login</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Error</a></li>
+            </ul>
+            <ul className="footer-links">
+              <li><h3>Información</h3></li>
+              <li><a href="#">Servidor Principal</a></li>
+              <li><a href="#">Clientes Activos</a></li>
+              <li><a href="#">ID de Usuario</a></li>
+            </ul>
+            <ul className="footer-links">
+              <li><h3>Legal</h3></li>
+              <li><a href="#">Términos</a></li>
+              <li><a href="#">Privacidad</a></li>
+              <li><a href="#">Última Actualización</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
 }
 
 export default Principal;
