@@ -14,7 +14,7 @@ function Login() {
       </Form.Group>
 
       <Form.Group className="contraseña" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
+        <Form.Label>Contraseña</Form.Label>
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
       <Form.Group className="iniciarsesion" controlId="formBasicCheckbox">
